@@ -28,3 +28,12 @@ c=count(3);
 print(next(c))
 print(next(c))
 print(next(c))
+
+
+def display():
+    for i in range(0,3):
+        yield i
+d=display()
+print(d.__next__())
+print(next(d))
+print(next(d))
